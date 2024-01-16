@@ -1,0 +1,95 @@
+/*This is the CSS for the body*/
+body{
+    text-align: center;
+    background-color: #5CDB95;
+    border: 5px solid #053368;
+    color: #053368;
+}
+/*This is my div*/
+div{
+    font-size: 25px;
+}
+/*This is use in my underline-hover*/
+li{
+    display: inline-block;
+    position: relative;
+    color: #053368;
+    font-family: sans-serif;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.4s all ease;
+    padding: 15px;
+}
+li:hover{
+    color: black;
+    transition: 0.4s all ease;
+}
+li:after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #379683;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+li:hover::after{
+    transform: scale(1);
+    transform-origin: bottom;
+}
+/*This is all the class for the border of my paragraph*/
+p.dotted{
+    border-style: dotted;
+    background-color: #379683;
+    color: white;
+}
+p.dashed{
+    border-style: dashed;
+    background-color: #8EE4AF;
+}
+p.double{
+    border-style: double;
+    background-color: #379683;
+    color: white;
+}
+p.groove{
+    border-style: groove;
+    background-color: #8EE4AF;
+}
+p.solid{border-style: solid;
+      background-color: #5CDB95;
+}
+p.ridge{
+    border-style: ridge;
+    background-color: #8EE4AF;
+}
+p.inset{
+    border-style: inset;
+    background-color: #5CDB95;
+}
+p.outset{
+    border-style: outset;
+    background-color: #8EE4AF;
+}
+p.none{
+    border-style: none;
+}
+p.hidden{
+    border-style: hidden;
+    background-color: #5CDB95;
+}
+p.mix{
+    border-style: dotted dashed solid double;
+    background-color: #8EE4AF;
+}
+/*This is a paragraph with a background image*/
+p.image{
+    background-image: url('mickey.png');
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+}
+       
